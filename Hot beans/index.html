@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hot Beans Web</title>
+<style>
+html { scroll-behavior: smooth; }
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ background-color: #e6e6e6;
+ color: #333;
+}
+.navbar {
+ background-color: #00cc44;
+ overflow: hidden;
+ position: sticky;
+ top: 0;
+}
+.navbar a {
+ float: left;
+ color: white;
+ padding: 14px 20px;
+ text-decoration: none;
+ font-weight: bold;
+}
+.navbar a:hover {
+ background-color: #009933;
+}
+.header {
+ background-color: #00cc44;
+ color: white;
+ padding: 60px;
+ text-align: center;
+}
+.section {
+ padding: 40px;
+}
+.section h2 {
+ color: #009933;
+}
+.button {
+ background-color: #00cc44;
+ color: white;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: inline-block;
+ margin-top: 15px;
+ border-radius: 4px;
+}
+.button:hover {
+ background-color: #009933;
+}
+.card {
+ background-color: #f5f5f5;
+ padding: 20px;
+ margin-bottom: 20px;
+ border-left: 5px solid #00cc44;
+ border-radius: 5px;
+ box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.profile-row {
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+.profile {
+ width: 100px;
+ border-radius: 50%;
+}
+input, textarea {
+ width: 100%;
+ padding: 10px;
+ margin-top: 5px;
+ margin-bottom: 10px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+}
+input[type=submit] {
+ background-color: #00cc44;
+ color: white;
+ border: none;
+ cursor: pointer;
+}
+input[type=submit]:hover {
+ background-color: #009933;
+}
+.footer {
+ background-color: #333;
+ color: white;
+ text-align: center;
+ padding: 20px;
+}
+@media (max-width: 600px) {
+ .navbar a {
+   float: none;
+   display: block;
+   text-align: center;
+ }
+ .profile-row {
+   flex-direction: column;
+   text-align: center;
+ }
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+<a href="#home">Home</a>
+<a href="#trainees">Trainees</a>
+<a href="#jobs">Jobs</a>
+<a href="#courses">Courses</a>
+<a href="#apply">Apply</a>
+</div>
+<div class="header" id="home">
+<h1>Hot Beans Web</h1>
+<p>Start your journey in web development today</p>
+</div>
+<div class="section">
+<h2>About Hot Beans Web</h2>
+<div class="card">
+<p>Hot Beans Web is a professional web development company specialising in creating modern, responsive, and user-friendly websites for a wide range of clients.</p>
+<p>As part of our expansion, we are looking for motivated individuals ready to begin their careers.</p>
+<p>At Hot Beans Web, we believe in continuous learning and development.</p>
+<a class="button" href="#apply">Apply Now</a>
+</div>
+</div>
+<div class="section" id="trainees">
+<h2>Our Trainee Developers</h2>
+<div class="card profile-row">
+<img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile">
+<div>
+<p><b>John Smith</b> – Junior Web Developer</p>
+<p>Specialises in HTML and CSS and works on responsive websites.</p>
+</div>
+</div>
+<div class="card profile-row">
+<img src="https://randomuser.me/api/portraits/women/44.jpg" class="profile">
+<div>
+<p><b>Sarah Khan</b> – Trainee Developer</p>
+<p>Focuses on UI/UX and developing JavaScript skills.</p>
+</div>
+</div>
+</div>
+<div class="section" id="jobs">
+<h2>Job Opportunities</h2>
+<div class="card">
+<p><b>Role:</b> Junior Web Developer</p>
+<p><b>Responsibilities:</b> Designing websites, maintaining systems, working in a team.</p>
+<p><b>Skills:</b> HTML, CSS, JavaScript</p>
+<p><b>Salary:</b> £20,000 - £25,000</p>
+</div>
+</div>
+<div class="section" id="courses">
+<h2>Web Development Courses</h2>
+<div class="card">
+<p><a href="https://www.w3schools.com" target="_blank">W3Schools</a></p>
+<p><a href="https://www.codecademy.com" target="_blank">Codecademy</a></p>
+<p><a href="https://www.udemy.com" target="_blank">Udemy</a></p>
+</div>
+</div>
+<div class="section" id="apply">
+<h2>Apply for a Position</h2>
+<div class="card">
+<form>
+<label>Full Name:</label>
+<input type="text" required>
+<label>Email Address:</label>
+<input type="email" required>
+<label>Qualifications and Experience:</label>
+<textarea required></textarea>
+<input type="submit" value="Submit Application">
+</form>
+</div>
+</div>
+<div class="footer">
+<p>© 2026 Hot Beans Web</p>
+</div>
+</body>
+</html>
